@@ -48,7 +48,6 @@ The third phase focuses on producing and sending the final outreach materials. T
 ### Memory & Context: **Chroma Vector DB**
 Chroma is easy to set up, lightweight, and supports fast semantic searches, allowing the system to quickly find relevant past examples.  
 Compared to **FAISS**, Chroma makes it easier to store metadata such as company size, industry, or outreach success — improving learning and decision-making.  
-Other vector databases are often more complex or require cloud services, while Chroma offers a simple and efficient local setup.
 
 ### Email Automation: **Gmail API**
 The **Gmail API** enables the system to send emails programmatically, including attachments like PDFs, without requiring manual intervention. It’s widely used, free for basic accounts, and well-documented for developers. It also supports tracking features such as delivery status. While CRMs like **HubSpot** or **Apollo** offer deeper analytics, they often require paid accounts and complex setup. The Gmail API provides a simpler yet scalable solution for small-scale automated outreach systems.
