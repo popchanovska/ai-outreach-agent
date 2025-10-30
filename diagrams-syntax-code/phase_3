@@ -1,0 +1,21 @@
+flowchart TD
+   subgraph Phase3["Phase 3: Output Generation and Delivery"]
+       C1["PDF Report Generator"]
+       C2["Convert Structured AI Use Cases into PDF"]
+       C3["Apply Brand Consistency - Logo, Colors, Fonts"]
+       C4["Output Delivery Module"]
+       C5["Prepare Email with PDF Attachment"]
+       C6["Send Email via Gmail API"]
+       C7["Learning Loop"]
+       C8["Store Successful Outreach in Chroma Vector DB"]
+       C9["Enable Future Personalization and Learning"]
+   end
+
+   C1 --> C2
+   C2 --> C3
+   C3 --> C4
+   C4 --> C5
+   C5 --> C6
+   C6 --> C7
+   C7 --> C8
+   C8 --> C9

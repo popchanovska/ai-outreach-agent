@@ -1,0 +1,28 @@
+flowchart TD
+subgraph subGraph0["Phase 1: Input & Config"]
+      A["User Input: URL/Company name"]
+      B("Branding/Config Module")
+end
+subgraph subGraph1["Phase 2: Agent Workflow"]
+      C("CompanyResearchAgent (CRA)")
+      D("IndustryAnalystAgent (IAA)")
+      E("CopywriterAgent (CWA)")
+end
+subgraph subGraph2["Tools & Memory"]
+      F["Google Search API"]
+      G["Chroma Vector Memory"]
+end
+subgraph subGraph3["Phase 3: Output & Delivery"]
+      H("Branding + PDF Report Generator")
+      I("Output Delivery Module")
+      J["Gmail API"]
+end
+  A --> C
+  B --> E & H
+  C --> F & G & D
+  D --> E
+  E --> H & I
+  H --> I
+  I --> J
+  G -- Retrieval --> C
+  I -- Storage/Learning --> G

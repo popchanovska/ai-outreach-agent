@@ -1,0 +1,17 @@
+flowchart TD
+  subgraph Phase1["Phase 1: Input & Config"]
+      A1["Initialize Environment"]
+      A2["Set up Agent Framework (LangChain)"]
+      A3["Connect to LLM (OpenAI API)"]
+      A4["Set up Memory & Research Tools"]
+      A5["Configure Chroma Vector Database"]
+      A6["Integrate Google Search API"]
+      A7["Create Branding Configuration File"]
+  end
+
+  A1 --> A2
+  A2 --> A3
+  A3 --> A4
+  A4 --> A5
+  A4 --> A6
+  A5 --> A7

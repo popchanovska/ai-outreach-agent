@@ -1,0 +1,22 @@
+flowchart TD
+subgraph Phase2["Phase 2: Agent Workflow"]
+       B1["CompanyResearchAgent (CRA)"]
+       B2["Retrieve Context from Chroma Vector DB"]
+       B3["Collect Raw Company Data (Websites, LinkedIn, Google Search)"]
+       B4["IndustryAnalystAgent (IHA)"]
+       B5["Classify Industry"]
+       B6["Deduce Pain Points"]
+       B7["Generate Structured AI Use Cases"]
+       B8["CopywriterAgent (CWA)"]
+       B9["Create Personalized Email Subject & Body"]
+       B10["Embed Branding Assets & Meeting Link"]
+ end
+   B1 --> B2 & B3
+   B2 --> B4
+   B3 --> B4
+   B4 --> B5 & B6 & B7
+   B5 --> B8
+   B6 --> B8
+   B7 --> B8
+   B8 --> B9
+   B9 --> B10
