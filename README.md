@@ -21,25 +21,25 @@ The overall workflow of the system starts with user input, where the user provid
 
 The project is built and executed in three main phases.
 
-![Project Architecture](architecture.png)
+![Project Architecture](/diagrams/architecture.png)
 
 ### Phase 1: Input & Config
 
 The first phase focuses on setting up the environment and integrating all the necessary tools. It includes initializing the agent framework using LangChain and connecting to an LLM through the OpenAI API. Memory and research tools are set up, including Chroma as the vector database for storing and retrieving past outreach results, and the Google Search API for gathering current company information. This phase also includes creating a branding configuration file to define company assets, templates, and the base URL for scheduling links. By the end of this phase, the environment is fully prepared to support the agent workflow.
 
-![Phase 1](phase_1.png)
+![Phase 1](/diagrams/phase_1.png)
 
 ### Phase 2: Agent Workflow
 
 The second phase focuses on building the system through agent chaining. The CRA collects raw company data and retrieves relevant context from the vector database, providing a foundation for informed analysis. The IHA uses this data to classify the company’s industry, deduce key challenges, and generate structured AI use cases, guided by past outreach stored in memory. The CWA then creates a personalized, persuasive email, combining the analysis results with branding assets and a meeting link. This phase ensures that the agents work together smoothly, producing consistent and contextually relevant content for each target company.
 
-![Phase 2](phase_2.png) 
+![Phase 2](/diagrams/phase_2.png) 
 
 ### Phase 3: Output & Delivery
 
 The third phase focuses on producing and sending the final outreach materials. The PDF Report Generator converts the structured AI use cases into a short, professional document that maintains brand consistency. The Output Delivery Module automates sending the email with the attached PDF through the Gmail API or an integrated CRM service. Additionally, the system includes a learning loop, where the details of successful outreach campaigns are stored back into the Chroma vector database. This allows the AI Outreach Agent to improve over time, learning from previous interactions and enhancing personalization for future campaigns.
 
-![Phase 3](phase_3.png) 
+![Phase 3](/diagrams/phase_3.png) 
 
 ---
 
