@@ -11,11 +11,11 @@ The system is designed to:
 ---
 ## Table of Contents
 
-- [Overview](#-overview)
-- [Project Architecture](#0project-architecture)
-  - [Phase 1: Input & Config](#-phase-1-input-&-config)
-  - [Phase 2: Agent Workflow](#-phase-2-agent-workflow)
-  - [Phase 3: Output & Delivery](#-phase-3-output-&-delivery)
+- [Overview](#overview)
+- [Project Architecture](#project-architecture)
+  - [Phase 1: Input & Config](#phase-1-input-&-config)
+  - [Phase 2: Agent Workflow](#phase-2-agent-workflow)
+  - [Phase 3: Output & Delivery](#phase-3-output-&-delivery)
 - [Technologies Explained](#technologies-explained)
 
 ---
