@@ -56,8 +56,7 @@ The third phase focuses on producing and sending the final outreach materials. T
 ## Technologies Explained
 
 ### Memory & Context: **Chroma Vector DB**
-Chroma is easy to set up, lightweight, and supports fast semantic searches, allowing the system to quickly find relevant past examples.  
-Compared to **FAISS**, Chroma makes it easier to store metadata such as company size, industry, or outreach success — improving learning and decision-making.  
+Chroma is easy to set up, lightweight, and supports fast semantic searches, allowing the system to quickly find relevant past examples. Compared to **FAISS**, Chroma makes it easier to store metadata such as company size, industry, or outreach success — improving learning and decision-making.  
 
 ### Email Automation: **Gmail API**
 The **Gmail API** enables the system to send emails programmatically, including attachments like PDFs, without requiring manual intervention. It’s widely used, free for basic accounts, and well-documented for developers. It also supports tracking features such as delivery status. While CRMs like **HubSpot** or **Apollo** offer deeper analytics, they often require paid accounts and complex setup. The Gmail API provides a simpler yet scalable solution for small-scale automated outreach systems.
@@ -68,8 +67,7 @@ The **Gmail API** enables the system to send emails programmatically, including 
 - Industry Analysis  
 - Copywriting  
 
-It structures the workflow so that each agent focuses on a specific task, while LangChain manages the data flow between them.  
-This modular design simplifies debugging, optimization, and integration with other tools (like **Chroma** or **Google Search API**), making the system more intelligent and adaptable.
+It structures the workflow so that each agent focuses on a specific task, while LangChain manages the data flow between them. This modular design simplifies debugging, optimization, and integration with other tools (like **Chroma** or **Google Search API**), making the system more intelligent and adaptable.
 
 ### Brand Consistency
 The system automatically applies **company branding** to generated PDFs and emails — including the logo, color palette, and fonts. Consistent visuals and formatting create a professional, trustworthy appearance and help recipients recognize the brand quickly. This attention to detail increases credibility and improves engagement rates.
